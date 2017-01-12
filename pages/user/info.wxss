@@ -1,0 +1,72 @@
+/* pages/User/info.wxss */
+.clear{
+  display: block;
+  clear: both
+}
+.container {
+  padding: 100rpx 0;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usertab{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 30rpx;
+  flex-wrap: wrap;
+}
+
+.userinfo-tab{
+  width: 50%;
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.active{
+  border-bottom: 5rpx solid #09bb07
+}
+
+.usercollect{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 25rpx;
+}
+.usercollect text{
+  display: block;
+}
+.user-collect{
+  width: 50%;
+  text-align: center;
+}
+.usercollect-cover{
+  width: 90%;
+  margin: 15rpx 0;
+}
+.usercollect-title{
+  text-indent: 15rpx;
+  text-align: left;
+  width: 90%;
+  margin: 5rpx 0;
+}
+.usercollect-author{
+  width: 50%;
+  margin: 5rpx 0;
+  float: left
+}
+.usercollect-price{
+  width: 50%;
+  margin: 5rpx 0;
+  float: right
+}

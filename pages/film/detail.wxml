@@ -1,0 +1,48 @@
+<!--pages/film/detail.wxml-->
+<view class="detail-container">
+    <view class="detail-top">
+        <view class="detail-left">
+            <image src="{{detail.images.large}}"></image>
+        </view>
+        <view class="detail-right">
+            <view class="detail-desc-container">
+                <text class="detail-title">{{detail.title}}({{detail.year}})</text>
+                <text class="detail-title">{{detail.original_title}}</text>
+                <view class="detail-ratings">
+                    <view>
+                        <text>评分人数</text>
+                        <text>{{detail.ratings_count}}</text>
+                    </view>
+                    <view>
+                        <text>想看人数</text>
+                        <text>{{detail.wish_count}}</text>
+                    </view>
+                    <view>
+                        <text>看过人数</text>
+                        <text>{{detail.collect_count}}</text>
+                    </view>
+                </view>
+                <view class="detail-genres">
+                    <text wx:for="{{detail.genres}}" wx:key="genres">{{item}}  </text>
+                </view>
+                <view class="detail-countries">
+                    <text>{{detail.countries}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="detail-desc">
+        {{detail.summary}}
+    </view>  
+</view>
+<view class="section">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view wx:for="{{detail.casts}}" wx:key="avatars" class="scroll-view-item scroll-view-item_H">
+            <image src="{{item.avatars.small}}"></image>
+            <text class="clear"></text>
+            <text>{{item.name}}</text>
+        </view>
+    </scroll-view>
+</view>
+
+

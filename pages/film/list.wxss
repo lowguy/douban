@@ -1,0 +1,46 @@
+/* pages/film/list.wxss */
+
+.container{
+    display: flex;
+    padding: 30rpx 0;
+    flex-direction: row;
+    width: 100%;
+    font-size: 30rpx;
+    flex-wrap: wrap;
+}
+.filmtab{
+    height: 50rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.film-tab{
+    width: 50%;
+    text-align: center;
+}
+.film-tab.active{
+    border-bottom:5rpx solid #09bb07;
+}
+.film{
+    width: 50%;
+    max-height: 500rpx;
+    font-size: 30rpx;
+    text-align: center;
+    margin: 20rpx 0;
+}
+.film text{
+    display: block;
+}
+.film text.clear{
+    clear: both
+}
+.film-img{
+    width: 80%;
+}
+.film-title{
+    width: 80%;
+    overflow: hidden;
+    height: 35rpx;
+    margin: 12rpx auto;
+}

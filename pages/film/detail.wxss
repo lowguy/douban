@@ -1,0 +1,90 @@
+/* pages/film/detail.wxss */
+.detail-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px;
+  background-image: url('/image/default/detail_top.jpg');
+  background-repeat: no-repeat;
+  background-color:#f4f6f5 
+}
+image{
+  max-width: 100%;
+  margin: 8px 0;
+}
+
+.detail-left{
+  width: 40%;
+  float: left;
+}
+.detail-right{
+  width: 60%;
+  float: right;
+}
+.detail-right .detail-desc-container{
+  margin: 8px;
+  font-size: 14px;
+}
+.detail-right .detail-desc-container .detail-title{
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
+.detail-ratings{
+  display: flex;
+  flex-direction: row;
+  margin: 8px 0;
+  color: #fff;
+}
+.detail-ratings view{
+  display: inline-block;
+  width: 33%;
+}
+.detail-ratings view text{
+  display: inline-block;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.detail-genres{
+  margin: 8px 0;
+  color: #fff;
+}
+.detail-desc{
+  font-size: 12px;
+  line-height: 24px;
+  color: #888;
+}
+.section{
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  background-color:#f4f6f5 
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 80px;
+  margin: 8px;
+}
+.scroll-view-item image{
+  height: 80px;
+  width:80px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.scroll-view-item text{
+  display: block;
+  width:80px;
+  overflow-x: hidden;
+  font-size: 12px;
+  text-align: center
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}

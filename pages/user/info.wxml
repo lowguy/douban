@@ -1,0 +1,19 @@
+<!--pages/User/info.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+  <view class="usertab">
+    <text class="userinfo-tab active">{{collect}}</text>
+    <text class="userinfo-tab" bindtap="bindFilmList">{{note}}</text>
+  </view>
+  <view class="usercollect">
+    <view class="user-collect" wx:key="unique" wx:for="{{collections}}">
+      <image class="usercollect-cover" src="{{item.book.image}}" background-size="cover"></image>
+      <text class="clear"></text>
+      <text class="usercollect-title">{{item.book.title}}</text>
+      <text class="usercollect-author">{{item.book.author}}</text>
+      <text class="usercollect-price">{{item.book.price}}</text>
+    </view>
+  </view>
+</view>
