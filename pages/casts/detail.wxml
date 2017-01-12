@@ -1,0 +1,19 @@
+<!--pages/casts/detail.wxml-->
+<view class="cast-container">
+    <view class="section">
+        <image src="{{detail.avatars.large}}"></image>
+        <view class="castinfo">
+            <text class="cast-name">{{detail.name}}</text>
+            <text class="cast-born-place">{{detail.born_place}}</text>
+        </view>
+    </view>
+    <view class="section" style="border:2px solid #2277aa">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view wx:for="{{detail.works}}" wx:key="works" class="scroll-view-item scroll-view-item_H" bindtap="getFilmInfo" data-id="{{item.subject.id}}">
+            <image src="{{item.subject.images.small}}"></image>
+            <text class="clear"></text>
+            <text>{{item.subject.title}}</text>
+        </view>
+    </scroll-view>
+</view>
+</view>

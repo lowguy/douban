@@ -15,9 +15,6 @@ Page({
     that.setData({
       select:options.select
     })
-    wx.setNavigationBarTitle({
-      title: options.title
-    })
     wx.getStorage({
       key: options.skey,
       success: function(res) {
@@ -39,9 +36,6 @@ Page({
                 })
                 that.setData({
                   film:res.data.subjects
-                })
-                wx.setNavigationBarTitle({
-                  title: res.data.title
                 })
               }
             })
@@ -65,9 +59,6 @@ Page({
             that.setData({
               film:res.data.subjects
             })
-            wx.setNavigationBarTitle({
-              title: res.data.title
-            })
           }
         })
       } 
@@ -77,7 +68,6 @@ Page({
   getFilmFuture:function(e){
     this.httpGet({
       "select":1
-      ,"title":"即将上映"
       ,"skey":"coming_soon"
       ,"url":"coming_soon"
     })
@@ -87,7 +77,6 @@ Page({
     var that = this
     that.httpGet({
       "select":0
-      ,"title":"最新上映"
       ,"skey":"in_theaters"
       ,"url":"in_theaters"
     })

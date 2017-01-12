@@ -6,13 +6,15 @@
     "pages/film/list",
     "pages/film/detail",
     "pages/books/list",
-    "pages/music/list"
+    "pages/music/list",
+    "pages/casts/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#f4f6f5"
   },
   "tabBar": {
     "list": [{

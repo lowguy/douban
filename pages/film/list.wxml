@@ -1,12 +1,15 @@
 <!--pages/film/list.wxml-->
-<view class="container">
+<view class="list-container">
     <view class="filmtab">
         <text class="film-tab {{select == 0 ? 'active':''}}" bindtap="getFilmNews">最新上映</text>
         <text class="film-tab {{select == 1 ? 'active':''}}" bindtap="getFilmFuture">即将上映</text>
     </view>
-    <view class="film" wx:for="{{film}}" wx:key="unique" bindtap="getFilmInfo" data-id="{{item.id}}">
-        <image class="film-img" src="{{item.images.large}}"></image>
-        <text class="clear"></text>
-        <text class="film-title">{{item.title}}</text>
+    <view class="film">
+        <view class="film-item" wx:for="{{film}}" wx:key="unique" bindtap="getFilmInfo" data-id="{{item.id}}">
+            <image class="film-img" src="{{item.images.large}}"></image>
+            <text class="clear"></text>
+            <text class="film-title">{{item.title}}</text>
+            <text class="film-rating">{{item.rating.stars/10}}</text>
+        </view>
     </view>
 </view>

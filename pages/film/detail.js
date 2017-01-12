@@ -58,6 +58,11 @@ Page({
       }
     })
   },
+  getCastInfo:function(e){
+    wx.navigateTo({
+      url: '../casts/detail?id='+e.currentTarget.dataset.id
+    })
+  },
   onReady:function(){
     // 页面渲染完成
   },

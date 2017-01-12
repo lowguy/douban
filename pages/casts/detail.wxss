@@ -1,0 +1,57 @@
+/* pages/casts/detail.wxss */
+.cast-container{
+    width: 100%;
+}
+.section{
+    width: 100%;
+}
+.section image{
+    width: 100%;
+}
+.section .castinfo{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: -80px;
+}
+.section .castinfo text{
+    display: block;
+    width: 100%;
+    margin: 8px;
+}
+
+.section .castinfo .cast-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section .castinfo .cast-born-place{
+    font-size: 12px;
+    color: #fff;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 80px;
+  margin: 8px;
+}
+.scroll-view-item image{
+  height: 80px;
+  width:80px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.scroll-view-item text{
+  display: block;
+  width:80px;
+  overflow-x: hidden;
+  font-size: 12px;
+  text-align: center
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}

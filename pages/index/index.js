@@ -3,8 +3,8 @@
 var app = getApp()
 Page({
   data: {
-    motto: '极简主义',
-    slogan: '懒得去想，懒得去看，只会静静的体会',
+    motto: '豆瓣',
+    slogan: '汇聚一亿人的生活趣味',
     userInfo: {}
   },
   //事件处理函数

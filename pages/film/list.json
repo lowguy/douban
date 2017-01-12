@@ -1,3 +1,6 @@
 {
-   "navigationBarTitleText": "最新上映"
+   "navigationBarTitleText": "豆瓣电影",
+   "window":{
+    "enablePullDownRefresh":true
+  }
 }

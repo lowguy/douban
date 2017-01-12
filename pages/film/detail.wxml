@@ -1,48 +1,51 @@
 <!--pages/film/detail.wxml-->
 <view class="detail-container">
-    <view class="detail-top">
+    <view class="bg bg-blur" style="background-image:url({{detail.images.large}})"></view>
+    <view class="detail-top" >
         <view class="detail-left">
             <image src="{{detail.images.large}}"></image>
         </view>
         <view class="detail-right">
             <view class="detail-desc-container">
-                <text class="detail-title">{{detail.title}}({{detail.year}})</text>
-                <text class="detail-title">{{detail.original_title}}</text>
+                <text class="detail-title">{{detail.title}}</text>
                 <view class="detail-ratings">
                     <view>
-                        <text>评分人数</text>
-                        <text>{{detail.ratings_count}}</text>
+                        <text>{{detail.ratings_count}}人评分</text>
                     </view>
-                    <view>
-                        <text>想看人数</text>
-                        <text>{{detail.wish_count}}</text>
-                    </view>
-                    <view>
-                        <text>看过人数</text>
-                        <text>{{detail.collect_count}}</text>
-                    </view>
-                </view>
-                <view class="detail-genres">
-                    <text wx:for="{{detail.genres}}" wx:key="genres">{{item}}  </text>
                 </view>
                 <view class="detail-countries">
                     <text>{{detail.countries}}</text>
                 </view>
+                <view class="detail-genres">
+                    <text wx:for="{{detail.genres}}" wx:key="genres">{{item}}  </text>
+                </view>
             </view>
         </view>
     </view>
-    <view class="detail-desc">
-        {{detail.summary}}
-    </view>  
 </view>
+<view class="detail-desc">
+    <view>
+        <text style="font-size:18px;font-weight:bold;">剧情简介</text>
+        <text>{{detail.summary}}</text>
+    </view>
+</view>  
 <view class="section">
     <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-        <view wx:for="{{detail.casts}}" wx:key="avatars" class="scroll-view-item scroll-view-item_H">
+        <view wx:for="{{detail.casts}}" wx:key="avatars" class="scroll-view-item scroll-view-item_H" bindtap="getCastInfo" data-id="{{item.id}}">
             <image src="{{item.avatars.small}}"></image>
             <text class="clear"></text>
             <text>{{item.name}}</text>
         </view>
     </scroll-view>
 </view>
+<!--<view class="section">
+    <view style="margin:0 8px;">
+        <text style="font-size:18px;font-weight:bold;display:block;width:100%;color:#888;line-height:36px;">
+            <text>短评</text>
+            <text style="display:block;float:right;margin-right:8px;">全部>></text>
+        </text>
+        <text>{{detail.summary}}</text>
+    </view>
+</view>-->
 
 
