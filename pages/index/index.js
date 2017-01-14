@@ -14,6 +14,8 @@ Page({
     })
   },
   onLoad: function () {
+    var res = app.getModel('common').sayHello('890')
+    console.log(res+"index")
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){

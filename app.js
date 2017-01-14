@@ -27,4 +27,7 @@ App({
   globalData:{
     userInfo:null
   }
+  ,getModel:function(model){
+    return require('/script/lib/'+model+'.js')
+  }
 })
